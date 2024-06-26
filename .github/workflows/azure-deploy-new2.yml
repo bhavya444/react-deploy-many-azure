@@ -39,7 +39,7 @@ jobs:
         action: 'upload'
         app_location: '/'
         api_location: ''
-        output_location: '$GITHUB_WORKSPACE/build'  # Use the build artifacts
+        output_location: 'build'  # Use the build artifacts
 
   build_and_deploy_test:
     runs-on: ubuntu-latest
@@ -65,4 +65,4 @@ jobs:
         action: 'upload'
         app_location: '/'
         api_location: ''
-        output_location: '$GITHUB_WORKSPACE/build'  # Use the same build artifacts
+        output_location: 'build'  # Use the same build artifacts
